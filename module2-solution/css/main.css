@@ -59,3 +59,34 @@ main {
 #sushi {
     background-color: #e5d198;
 }
+
+#last-card {
+    display: none;
+}
+
+
+/* Tablet version (between 768px and 991px, inclusively) */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #last-card {
+        display: block;
+        margin: -28px 60px 0 60px;
+    }
+
+    #last-card-desktop {
+        display: none;
+    }
+}
+
+/* Mobile version (equal to or less than 767px) */
+
+@media (max-width: 767px) {
+    main {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    main .card {
+        margin-top: 50px;
+    }
+}
